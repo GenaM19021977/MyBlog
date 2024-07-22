@@ -24,7 +24,7 @@ class Post(models.Model):
     class Meta:
         ordering = ['-publish']  # Добавление отображения по убыванию жаты публикации
         indexes = [
-            models.Index(fields=['-publish']),  # Добавление индексации
+            models.Index(fields=['-publish']),  # Добавление индексации для нового комита
         ]
 
     def __str__(self):
